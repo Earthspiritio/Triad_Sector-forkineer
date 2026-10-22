@@ -1,3 +1,4 @@
+using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
@@ -29,4 +30,9 @@ public sealed partial class NailClipperComponent : Component
     /// </summary>
     [DataField]
     public List<string> AllowedClawTypes = [];
+
+    // Triad changes
+    // Plays the nailclip ogg
+    public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/Items/scissors.ogg");
+    // End Triad
 }
